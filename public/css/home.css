@@ -49,6 +49,19 @@ a:hover{
     font-size: 20px;
 }
 
+.transparent_button_black {
+    color: black;
+    padding:10px; 
+    padding-left:50px; 
+    padding-right:50px;
+    letter-spacing:4px; 
+    border:2px solid black;
+}
+
+.transparent_button_black:hover {
+    font-size: 20px;
+}
+
 /* Style the navigation menu */
 .topnav {
     overflow: hidden;
@@ -68,4 +81,41 @@ a:hover{
   .topnav a:hover {
     color:white;
     opacity: .70;  
+  }
+
+  .sec_image {
+      height: 350px;
+      width: 600px;
+      margin: auto;
+  }
+
+  .margin-right-end{
+      margin-right: 10px
+  }
+
+  .sec {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .sec-text {
+      padding: 0px;
+      margin-left: 30px;
+  }
+
+  .sec-5 {
+      background-image: url('../images/sec-5-shaft-2.jpg');
+      opacity:0.90;
+      position: relative;
+      background-attachment: scroll;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 65%;
+      text-align:right;
+  }
+
+  .vertical-line{
+      border-left: 2px solid #DCDCDC;
+      height: 80%
   }
