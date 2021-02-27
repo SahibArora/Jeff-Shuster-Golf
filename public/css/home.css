@@ -1,3 +1,6 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+}
 #top-header {
     background-image: url('../images/home_pg-img.jpg');
     position: relative;
