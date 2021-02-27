@@ -27,16 +27,7 @@
                 <a href="/contact" class='btn' style='margin-top:20px;opacity:1'><span class='transparent_button'>Book a Fitting</span></a>
             </div>
         </div>
-        <div class="topnav">
-            <div class='uppercase' style='display:flex; float:right; letter-spacing: 7px'>
-                <a href="#" style='text-decoration:none'>About |</a>
-                <a href="#" style='text-decoration:none'>Services |</a>
-                <a href="#" style='text-decoration:none'>Subscribe |</a>
-                <a href="#" style='text-decoration:none'>Contact |</a>
-                <a href="#" style='text-decoration:none'>Shop now</a>
-            </div>
-            </a>
-        </div>
+        {{>header}}
         <div class='sec' style='display:flex'>
             <img class='sec_image' src='images/sec-1_head.png'/>
             <div class='margin-right-end sec-text' style='float:right'>
@@ -137,14 +128,15 @@
         </div>
         <div class='sec sec-7' style='display:flex'>
             <img style='float: right; height: 300px; width: 50%;margin-left: 20px' src='images/Angus_Club.JPG'>
-            <div style='margin:auto; text-align:center' class='margin-right-end'>
-                <p class='sec-text' style='color:black; font-size: 18px; font-weight: 400;'>Jeff Shuster Golf is conveniently located at the</p>
-                <p class='sec-text uppercase' style='color:black; font-size: 25px; font-weight: 400;'>ANGUS GLEN GOLF CLUB</p>
+            <div style='margin:auto; text-align:center; margin-right:20px'>
+                <p class='sec-text' style='color:black; font-size: 18px; font-weight: 400;'><span class='uppercase' style='letter-spacing:1px;font-weight:500'>Jeff Shuster Golf</span> is conveniently located at the</p>
+                <p class='sec-text uppercase' style='color:black; font-size: 25px; font-weight: 400;letter-spacing: 8px'><strong>ANGUS GLEN GOLF CLUB</strong></p>
                 <p class='sec-text' style='color:black; font-size: 18px; font-weight: 400;'>and provides an excellent experience for our clients. Along with being
                 able to offer quality fitting and custom building services on site, we 
                 have full access to the driving range for full ball flight analysis, 
                 using Titleist golf balls, the short game area for wedge work and the full size putting green.</p>
             </div>
         </div>
+        {{>footer}}
     </body>
 </html>
