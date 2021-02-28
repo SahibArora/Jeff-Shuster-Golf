@@ -39,6 +39,22 @@ app.get('/',(req,res)=>{
     res.render('home', {})
 })
 
+app.get('/services', (req,res)=>{
+    res.render('services', {})
+})
+
+app.get('/about', (req,res)=>{
+    res.render('about', {})
+})
+
+app.get('/ourbrands', (req,res)=>{
+    res.render('brands', {})
+})
+
+app.get('/contact', (req,res)=>{
+    res.render('contact', {})
+})
+
 app.get('*', (req,res)=>{
     res.send('Page does not exist')
 })
