@@ -1,4 +1,24 @@
 #root{
-    background-image: linear-gradient(135deg,rgb(180,180,180),rgb(210,210,210));
-    height: 70%;
+    background-color:rgb(256,256,256);
+}
+
+.margin-about-left {
+    margin: 200px;
+}
+
+.margin-50lt {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#info {
+    margin: auto;
+    margin-top:80px;
+    width: 75%;
+    box-shadow: 1px 1px 5px #696969;
+    padding: 30px;
+}
+
+#email:hover{
+    color: goldenrod;
 }
