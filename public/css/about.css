@@ -22,3 +22,19 @@
 #email:hover{
     color: goldenrod;
 }
+
+.transparent_button_black_about {
+    color: black;
+    padding:10px; 
+    padding-left:50px; 
+    padding-right:50px;
+    letter-spacing:4px; 
+    border:2px solid black;
+}
+
+.transparent_button_black_about:hover {
+    background-color: goldenrod;
+    color: white;
+    font-weight: 400;
+    border:2px solid goldenrod;
+}
