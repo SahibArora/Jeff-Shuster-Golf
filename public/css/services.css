@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     opacity:0.80;
-    height:160%;
+    height:165%;
 }
 
 #service-text {
@@ -71,7 +71,8 @@ li
     text-align: center;
     display: table-row;
 }
-span
+
+li > span
 {
     display: table-cell;
     vertical-align: middle;
