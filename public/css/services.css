@@ -1,0 +1,79 @@
+#bg-img-header {
+    background-image:  linear-gradient( rgba(255,165,0, 0.4), rgba(0,0,0, 0.3) ), url('../images/service-img-2.jpg');
+    position: relative;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:0.80;
+    height:150%;
+}
+
+#service-text {
+    width:55%;
+    margin-left: 100px;
+    padding:50px;
+    background-color: rgba(0,10,0, 0.3);
+    border-radius: 20px; 
+    box-shadow:1px 1px 5px rgba(0,0,0, 1)
+}
+
+.head-text {
+    letter-spacing: 10px;
+}
+
+.middle-text {
+    letter-spacing: 5px;
+}
+
+#service-details {
+    margin-left: 8%;
+    width:80%;
+    margin-top: -10%;
+    margin-bottom: 8%;
+}
+
+.service-box{
+    margin: 3%;
+    width: 30%;
+    height:300px;
+    margin-bottom: 1%;
+    background-image:  linear-gradient( rgba(255,255,255), rgba(255,255,255) );
+    position: relative;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2%;
+    box-shadow:1px 1px 10px rgba(0,0,0, 0.3);
+    text-align: center;
+}
+
+.service-box-link {
+    color: black;
+    font-size: 15px;
+}
+
+.service-box-link:hover {
+    color: goldenrod;
+}
+
+ul
+{
+    display: table;
+    table-layout: fixed;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+li
+{
+    text-align: center;
+    display: table-row;
+}
+
+li > span
+{
+    display: table-cell;
+    vertical-align: middle;
+}
