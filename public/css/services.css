@@ -1,5 +1,5 @@
 #bg-img-header {
-    background-image:  linear-gradient( rgba(255,165,0, 0.4), rgba(0,0,0, 0.3) ), url('../images/service-img-2.jpg');
+    background-image:  linear-gradient( rgba(255,185,0, 0.1), rgba(0,0,0, 0.3) ), url('../images/service-img.jpg');
     position: relative;
     background-attachment: scroll;
     background-position: center;
