@@ -2,6 +2,11 @@
     background-color:rgb(256,256,256);
 }
 
+#root-contact{
+    background-color:rgb(256,256,256);
+    margin:auto;
+}
+
 .margin-about-left {
     margin: 200px;
 }
@@ -17,6 +22,24 @@
     width: 75%;
     box-shadow: 1px 1px 5px #696969;
     padding: 30px;
+}
+
+#info-contact {
+    margin: auto;
+    margin-top:-150px;
+    width: 75%;
+    box-shadow: 1px 1px 5px #696969;
+    text-align: center;
+    padding: 50px;
+    padding-top:50px;
+    padding-bottom:50px;
+    margin-bottom: 1%;
+    background-image:  linear-gradient( rgba(255,255,255), rgba(255,255,255) );
+    position: relative;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #email:hover{
