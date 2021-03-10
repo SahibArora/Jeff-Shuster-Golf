@@ -5,8 +5,18 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity:0.80;
     height:160%;
+}
+
+#bg-img-header-contact {
+    background-image: url('../images/contact-img-2.jpg');
+    position: relative;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:0.90;
+    height:120%;
 }
 
 #service-text {
@@ -14,6 +24,13 @@
     margin-left: 100px;
     padding:50px;
     border-radius: 20px; 
+}
+
+#service-text-contact {
+    margin-right: 100px;
+    padding:50px;
+    border-radius: 20px; 
+    text-align: right;
 }
 
 .head-text {
@@ -25,15 +42,15 @@
 }
 
 #service-details {
-    margin-left: 8%;
+    margin: auto;
     width:80%;
     margin-top: -10%;
     margin-bottom: 8%;
 }
 
 .service-box{
-    margin: 3%;
-    width: 30%;
+    margin: auto;
+    width: 27%;
     height:300px;
     margin-bottom: 1%;
     background-image:  linear-gradient( rgba(255,255,255), rgba(255,255,255) );
