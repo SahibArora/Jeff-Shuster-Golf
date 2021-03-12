@@ -55,6 +55,8 @@
 }
 
 .transparent_button_black_brand {
+    background-color: transparent;
+    border: 0px;
     color: black;
     padding:2px; 
     padding-left:50px; 
