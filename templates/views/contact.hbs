@@ -25,11 +25,11 @@
                 <span class='' style='color:white; font-size: 23px;font-weight:500'><a href='https://maps.google.com/?q=Angus Glen Golf Club' target='_blank' style='color: white; text-decoration: none'>10080 Kennedy Rd. (at Angus Glen Golf Club) <br>Markham, ON L6C 1N9</a></span><br><br>
                 
                 <a href='mailto:jeff@jeffshustergolf.com' target='_blank' style='padding:5px;text-decoration:none;color:white;float:center'><span><img alt='Gmail' src='images/gmail-black.png' height='30px' width='30px'>&nbsp;&nbsp;<span style='font-size: 20px; font-weight:500'>jeff@jeffshustergolf.com</span></span></a>
-                <a href='tel:416-500-7070' target='_blank' style='padding:7px;text-decoration:none;color:white;float:center'><span><img alt='Phone' height='24px' width='24px' src='images/phone-black.PNG'>&nbsp;&nbsp;<span style='font-size: 20px;font-weight:500'>416-500-7070</span></span></a><br><br>
+                <a href='tel:416-500-7070' target='_blank' style='padding:7px;text-decoration:none;color:white;float:center'><span><img alt='Phone' height='24px' width='24px' src='images/phone-black.png'>&nbsp;&nbsp;<span style='font-size: 20px;font-weight:500'>416-500-7070</span></span></a><br><br>
                 
-                <a href='https://www.instagram.com/jeffshustergolf/' target='_blank' style='padding:7px;float:center'><img alt='Instagram' height='30px' width='30px' src='images/Instagram-black.png'></a>
-                <a href='https://www.facebook.com/jeffshustergolf' target='_blank' style='padding:7px;float:center'><img alt='Facebook' height='24px' width='24px' src='images/Facebook-black.png'></a>
-                <a href='https://twitter.com/jeffshustergolf' target='_blank' style='padding:7px;float:center'><img alt='Twitter' height='24px' width='24px' src='images/Twitter-black.png'></a>
+                <a href='https://www.instagram.com/jeffshustergolf/' target='_blank' style='padding:7px;float:center'><img alt='Instagram' height='30px' width='30px' src='images/instagram-black.png'></a>
+                <a href='https://www.facebook.com/jeffshustergolf' target='_blank' style='padding:7px;float:center'><img alt='Facebook' height='24px' width='24px' src='images/facebook-black.png'></a>
+                <a href='https://twitter.com/jeffshustergolf' target='_blank' style='padding:7px;float:center'><img alt='Twitter' height='24px' width='24px' src='images/twitter-black.png'></a>
             </div>
         </div>
         <div id='root-contact'>
@@ -64,9 +64,31 @@
                                 <option value="Putter Fitting">Putter Fitting</option>
                                 <option value="Lie/Loft Fitting">Lie/Loft Fitting</option>
                                 <option value="Re-shafting/Repairs">Re-shafting/Repairs</option>
+                                <option value="Other">Other</option>
                             </select>
                         </div>
                     </div><br><br>
+                    <!--<div class="form-row">
+                        <div class="col">
+                            <label class='uppercase col-md-9' style='font-weight: 500'>Choose your Date (required)</label>
+                            <input class='col-lg' type='date' name='date' id='date' style='font-size:15px; height:50px' required/>
+                        </div>
+                        <div class="col">
+                            <label class='uppercase col-md-9' style='font-weight: 500'>Select your Time (required)</label>
+                            <select class='col-lg' name='serviceInterest' id='serviceInterest' style='font-size:15px; height:50px;' required>
+                                <option value="">- - -</option>
+                                <option value="1">09 am - 10 am</option>
+                                <option value="2">10 am - 11 am</option>
+                                <option value="3">11 am - Noon </option>
+                                <option value="4">01 pm - 02 pm</option>
+                                <option value="5">02 pm - 03 pm</option>
+                                <option value="6">03 pm - 04 pm</option>
+                                <option value="7">04 pm - 05 pm</option>
+                                <option value="Other">other</option>
+                            </select>
+                            <label class='' style='font-weight: 400; margin-top:10px;'><mark>*Please choose the start time, and service type will book required slots for you automatically, unless its not other.</mark></label>
+                        </div>
+                    </div><br><br>-->
                     <div class="form-row">
                         <div class="col">
                             <label class='uppercase col-md-2' style='font-weight: 500'>Message</label><br>
@@ -84,9 +106,5 @@
         {{>footer}}
     </body>
     <script>
-            document.getElementById('serviceInterest').css({
-                'background': 'white',
-                'color':'black',
-            });
     </script>
 </html>

@@ -46,7 +46,7 @@
     color: goldenrod;
 }
 
-.transparent_button_black_about {
+.transparent_button_black {
     color: black;
     padding:10px; 
     padding-left:50px; 
@@ -55,9 +55,17 @@
     border:2px solid black;
 }
 
-.transparent_button_black_about:hover {
+.transparent_button_black:hover {
     background-color: goldenrod;
-    color: white;
-    font-weight: 400;
-    border:2px solid goldenrod;
+    font-size: 20px;
+}
+
+.transparent_button_black_brand {
+    background-color: transparent;
+    border: 0px;
+    color: black;
+    padding:2px; 
+    padding-left:50px; 
+    padding-right:50px;
+    letter-spacing:4px; 
 }
