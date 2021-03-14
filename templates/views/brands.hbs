@@ -17,11 +17,9 @@
         {{>header}}
             <div id='root'>
                 <div>
-                    <div style='display: inline'>
-                        <button id='shafts' class='transparent_button_black_brand uppercase' style='color:black; text-decoration: none; font-weight: 500; font-size: 20px; outline: none' onclick="showShafts()"><span id='shafts_txt'>Shafts</span></button> <button id='clubs' class='transparent_button_black_brand uppercase' style='color:black; text-decoration: none; font-weight: 500; font-size: 20px; outline: none' onclick="showClubs()"><span id='clubs_txt'>Clubs</span></button>
-                    </div>
+                    <h1>Our Featured Brands</h1>
                     <hr style='background-color: black'>
-                    <table id='shafts_table'>
+                    <table>
                         <tr>
                             <td><a><img id='accra_shafts' src='images/brands/Accra_Shafts.png' alt='Accra_Shafts' height='100px' width='230px'/></a></td>
                             <td><a><img id='Aerotech_Shafts' src='images/brands/Aerotech_Shafts.png' alt='Aerotech_Shafts' height='100px' width='230px'/></a></td>
@@ -34,11 +32,6 @@
                             <td><a><img id='UST_Mamiya_Shafts' src='images/brands/UST_Mamiya_Shafts.png' alt='UST_Mamiya_Shafts' height='70px' width='230px'/></a></td>
                             <td><a><img id='Mitsubishi_Shafts' src='images/brands/Mitsubishi_Shafts.png' alt='Mitsubishi_Shafts' height='150px' width='200px'/></a></td>
                         </tr>
-                        <tr>
-                            <td><a><img id='Graphite_Design_Shafts' src='images/brands/Graphite_Design_Shafts.png' alt='Nippon_Shafts' height='100px' width='230px'/></a></td>
-                        </tr>
-                    </table>
-                    <table id='clubs_table'>
                         <tr>
                             <td><a><img id='Callaway_Golf' src='images/brands/Callaway_Golf.png' alt='Callaway_Golf' height='60px' width='130px'/></a></td>
                             <td><a><img id='Cobra_Golf' src='images/brands/Cobra_Golf.png' alt='Cobra_Golf' height='100px' width='140px'/></a></td>
@@ -58,6 +51,7 @@
                             <td><a><img id='Titleist_Golf' src='images/brands/Titleist_Golf.png' alt='Titleist_Golf' height='60px' width='180px'/></a></td>
                         </tr>
                         <tr>
+                            <td><a><img id='Graphite_Design_Shafts' src='images/brands/Graphite_Design_Shafts.png' alt='Nippon_Shafts' height='100px' width='230px'/></a></td>
                             <td><a><img id='Vokey_Golf' src='images/brands/Vokey_Golf.png' alt='Vokey_Golf' height='80px' width='200px'/></a></td>
                         </tr>
                     </table>
@@ -65,7 +59,6 @@
             </div>
         {{>footer}}
     </body>
-    <script src='js/brands.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
