@@ -52,8 +52,8 @@
                             <input class='col-lg' type='text' name='subject' id='subject' style='font-size:15px; height:50px' required/>
                         </div>
                         <div class="col">
-                            <label for='serviceInterest' class='uppercase col-md-9' style='font-weight: 500'>Service Interest (required)</label>
-                            <select class='col-lg' name='serviceInterest' id='serviceInterest' style='font-size:15px; height:50px;' required>
+                            <label for='serviceInterest' class='uppercase col-md-9' style='font-weight: 500'>Service Interest</label>
+                            <select class='col-lg' name='serviceInterest' id='serviceInterest' style='font-size:15px; height:50px;' onchange='showTimeSlots()'>
                                 <option value="">- - -</option>
                                 <option value="Driver Fitting">Driver Fitting</option>
                                 <option value="Iron Fitting">Iron Fitting</option>
@@ -68,14 +68,14 @@
                             </select>
                         </div>
                     </div><br><br>
-                    <div class="form-row">
+                    <div id='time_slots' class="form-row">
                         <div class="col">
                             <label class='uppercase col-md-9' style='font-weight: 500'>Choose your Date (required)</label>
-                            <input class='col-lg' type='date' name='date' id='date' style='font-size:15px; height:50px' required/>
+                            <input class='col-lg' type='date' name='date' id='date' style='font-size:15px; height:50px'/>
                         </div>
                         <div class="col">
                             <label class='uppercase col-md-9' style='font-weight: 500'>Select your Time (required)</label>
-                            <select class='col-lg' name='serviceInterest' id='serviceInterest' style='font-size:15px; height:50px;' required>
+                            <select class='col-lg' name='timeSlot' id='timeSlot' style='font-size:15px; height:50px;'>
                                 <option value="">- - -</option>
                                 <option value="1">09 am - 10 am</option>
                                 <option value="2">10 am - 11 am</option>
