@@ -44,6 +44,7 @@
                         <div class="col">
                             <label class='uppercase col-md-7' style='font-weight: 500'>Your email (required)</label>
                             <input class='col-lg' type='text' name='email-form' id='email-form' style='font-size:15px; height:50px' onfocusout='validateEmail()' required/>
+                            <p id='errorEmail' style='color: red; display:none'>Please enter valid email</p>
                         </div>
                     </div><br><br>
                     <div class="form-row">
@@ -77,14 +78,32 @@
                             <label class='uppercase col-md-9' style='font-weight: 500'>Select your Time (required)</label>
                             <select class='col-lg' name='timeSlot' id='timeSlot' style='font-size:15px; height:50px;'>
                                 <option value="">- - -</option>
-                                <option value="1">09 am - 10 am</option>
-                                <option value="2">10 am - 11 am</option>
-                                <option value="3">11 am - Noon </option>
-                                <option value="4">01 pm - 02 pm</option>
-                                <option value="5">02 pm - 03 pm</option>
-                                <option value="6">03 pm - 04 pm</option>
-                                <option value="7">04 pm - 05 pm</option>
-                                <option value="Other">other</option>
+                                <option value="9">09:00 am</option>
+                                <option value="930">09:30 am</option>
+                                <option value="10">10:00 am</option>
+                                <option value="1030">10:30 am</option>
+                                <option value="11">11:00 am</option>
+                                <option value="1130">11:30 am</option>
+                                <option value="12">Noon</option>
+                                <option value="1230">12:30 pm</option>
+                                <option value="13">01:00 pm</option>
+                                <option value="1330">01:30 pm </option>
+                                <option value="14">02:00 pm</option>
+                                <option value="1430">02:30 pm</option>
+                                <option value="15">03:00 pm</option>
+                                <option value="1530">03:30 pm</option>
+                                <option value="16">04:00 pm</option>
+                                <option value="1630">04:30 pm</option>
+                                <option value="17">05:00 pm</option>
+                                <option value="1730">05:30 pm </option>
+                                <option value="18">06:00 pm</option>
+                                <option value="1830">06:30 pm</option>
+                                <option value="19">07:00 pm</option>
+                                <option value="1930">07:30 pm</option>
+                                <option value="20">08:00 pm</option>
+                                <option value="2030">08:30 pm </option>
+                                <option value="2100">09:00 pm</option>
+                                <option value="2130">09:30 pm</option>
                             </select>
                             <label class='' style='font-weight: 400; margin-top:10px;'><mark>*Please choose the start time, and service type will book required slots for you automatically, unless its not other.</mark></label>
                         </div>
