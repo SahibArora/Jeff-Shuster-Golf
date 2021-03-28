@@ -57,6 +57,9 @@ footer {
     font-size: 18px; 
     border: 0px;
     background-color: #191919;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
     border-bottom: 2px solid #EBEBEB;
 }
 
