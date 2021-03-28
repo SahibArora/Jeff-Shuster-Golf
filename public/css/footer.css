@@ -100,6 +100,10 @@ button {
 }
 
 @media only screen and (max-width: 650px){
+    #emailInput {
+        width: 250px;
+    }
+
     #bgSc{
         display: none;
     }
