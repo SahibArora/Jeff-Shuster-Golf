@@ -19,4 +19,8 @@ span{
     li > span {
         display: block;
     }
+
+    span{
+        padding: auto;
+    }
 }
