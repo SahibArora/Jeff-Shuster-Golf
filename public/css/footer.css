@@ -124,7 +124,7 @@ button {
 
     #bottombox{
         display: block;
-        margin: auto;
+        margin: 0px;
         padding: 1px;
     }
     
@@ -151,6 +151,7 @@ button {
     #bottombox {
         text-align: center;
         margin: 0px;
+        margin-left: 40px;
         padding: 1px;
         display: block;
     }
