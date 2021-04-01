@@ -1,9 +1,22 @@
 #root {
-    padding:2%;
-    width: 90%;
     margin: auto;
+    padding: 20px;
+    width: 90%;
 }
 
-td{
+span{
     padding: 30px;
+}
+
+@media only screen and (max-width: 1220px){
+    #root {
+        display: block;
+        padding: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    li > span {
+        display: block;
+    }
 }
