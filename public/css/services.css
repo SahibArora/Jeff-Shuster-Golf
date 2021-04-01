@@ -105,6 +105,11 @@ li > span
 }
 
 @media only screen and (max-width: 1220px){
+
+    #bg-img-header{
+        width: 150%;
+    }
+
     #service-text {
         width:90%;
         margin-left: 10px;
