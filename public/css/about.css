@@ -155,6 +155,11 @@
         letter-spacing:2px; 
         border:2px solid black;   
     }
+
+    #info-contact{
+        margin: auto;
+        width: 95%;
+    }
 }
 
 @media only screen and (max-width: 1000px){
