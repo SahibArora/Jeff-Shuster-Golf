@@ -1,26 +1,39 @@
 #root {
+    text-align: center;
     margin: auto;
     padding: 20px;
-    width: 90%;
+    width: 100%;
+}
+
+ul > li{
+    display: inline-block;
 }
 
 span{
     padding: 30px;
 }
 
+@media only screen and (max-width: 680px){
+    li > span {
+        display: block;
+    }
+}
+
 @media only screen and (max-width: 1220px){
     #root {
+        text-align: center;
         display: block;
         padding: auto;
         width: 100%;
-        text-align: center;
+    }
+
+    
+    ul > li{
+        display: inline-block;
     }
 
     li > span {
         display: block;
-    }
-
-    span{
         padding: 15px;
     }
 }
