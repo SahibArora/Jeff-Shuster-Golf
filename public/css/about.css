@@ -146,6 +146,15 @@
         padding: 10px;
         margin-top: 50px;
     }
+
+    .transparent_button_black_about{
+        color: black;
+        padding:10px; 
+        padding-left:20px; 
+        padding-right:20px;
+        letter-spacing:2px; 
+        border:2px solid black;   
+    }
 }
 
 @media only screen and (max-width: 1000px){
