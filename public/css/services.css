@@ -50,16 +50,16 @@
 
 .service-box{
     margin: auto;
-    width: 27%;
+    width: 300px;
     height:300px;
-    margin-bottom: 1%;
+    margin-bottom: 20px;
     background-image:  linear-gradient( rgba(255,255,255), rgba(255,255,255) );
     position: relative;
     background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 2%;
+    padding: 10px;
     box-shadow:1px 1px 10px rgba(0,0,0, 0.3);
     text-align: center;
 }
@@ -71,6 +71,10 @@
 
 .service-box-link:hover {
     color: goldenrod;
+}
+
+.boxRow {
+    display: flex;
 }
 
 ul
@@ -91,4 +95,10 @@ li > span
 {
     display: table-cell;
     vertical-align: middle;
+}
+
+@media only screen and (max-width: 1220px){
+    .boxRow {
+        display: block;
+    }
 }
