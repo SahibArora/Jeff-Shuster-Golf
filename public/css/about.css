@@ -159,6 +159,13 @@
     #info-contact{
         margin: auto;
         width: 95%;
+        margin-top:-150px;
+        box-shadow: 1px 1px 5px #696969;
+        text-align: center;
+        padding: 50px;
+        padding-top:50px;
+        padding-bottom:50px;
+        margin-bottom: 1%;
     }
 }
 
