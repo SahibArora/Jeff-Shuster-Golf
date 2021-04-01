@@ -19,9 +19,9 @@ footer {
 }
 
 #bottombox {
-    margin:20px;
+    margin:auto;
     display: table;
-    width: 90%;
+    width: 100%;
 }
 
 #bottombox > span {
