@@ -1,0 +1,177 @@
+footer {
+    background-color: #191919;
+    color: white;
+    font-size: 20px;
+}
+
+#upperbox{
+    margin:auto; 
+    box-shadow: 5px 5px 10px black; 
+    display:flex;
+}
+
+.section {
+    margin: 30px 30px 30px 30px;
+}
+
+#phone{
+    margin: 90px;
+}
+
+#bottombox {
+    margin:auto;
+    display: table;
+    width: 100%;
+}
+
+#bottombox > span {
+    display: table-row;
+}
+
+#bottombox > span > p {
+    display: table-cell;
+}
+
+#bottombox > span > #socialLinks {
+    text-align: right;
+}
+
+#bottombox > .sec{
+    margin: 10px;
+}
+
+#inputCheck {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    font-size: 16px;
+}
+
+#emailInput {
+    color: white;
+    margin-top: 25px;
+    margin-right: 20px;
+    height: 35px; 
+    width: 400px; 
+    font-size: 18px; 
+    background-color: #191919;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom: 2px solid #EBEBEB;
+}
+
+#emailInput:hover {
+    color: white;
+}
+
+#confirmBox{
+    display: flex;
+    margin-top: 10px;
+}
+
+#confirmCheck {
+    height:18px;
+    width: 18px;
+}
+
+.section > span {
+    padding-top: 15px;
+    font-size: 16px;
+}
+
+button {
+    color: #EBEBEB;
+    background-color: transparent;
+    border: 1px solid #EBEBEB;
+    padding: 3px 20px;
+}
+
+#sgSc {
+    display: none;
+}
+
+@media only screen and (max-width: 1390px){
+    #bgSc{
+        display: none;
+    }
+    #sgSc {
+        display: initial;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    #emailInput {
+        width: 250px;
+    }
+
+    #bgSc{
+        display: none;
+    }
+    #sgSc {
+        display: initial;
+    }
+}
+
+@media only screen and (max-width: 1120px){
+    #upperbox {
+        text-align: center;
+        margin: 0px;
+        padding: 1px;
+        display: block;
+    }
+
+    #bottombox{
+        display: block;
+        margin: 0px;
+        padding: 1px;
+    }
+    
+    #bottombox > span {
+        display: block;
+    }
+
+    #bottombox > span > p {
+        display: block;
+    }
+
+    #bottombox > span > #socialLinks {
+        text-align: center;
+    }
+
+    #inputCheck {
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: block;
+        font-size: 16px;
+    }
+
+    #bottombox {
+        text-align: center;
+        margin: 0px;
+        padding: 1px;
+        display: block;
+    }
+
+    #confirmCheckText{
+        text-align: center;
+    } 
+
+    .sec > #social-links {
+        float:center; 
+    }
+
+    .sec > #creator{
+        float: center;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+
+    #phone{
+        margin: 40px;
+    }
+}

@@ -5,6 +5,8 @@
         <link rel='stylesheet' href='css/home.css'/>
         <link rel='stylesheet' href='css/services.css'/>
         <link rel='stylesheet' href='css/about.css'/>
+        <link rel='stylesheet' href='css/header.css'/>
+        <link rel='stylesheet' href='css/footer.css'/>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,11 +20,10 @@
     <body>
         {{>header}}
         <div id='bg-img-header-contact'>
-            <div style='height:1%'></div>
             <div id='Service-text-contact'>
-                <span class='head-text uppercase' style='color:white; font-size: 40px;font-weight:700;'>Contact Us</span><br><br>
-                <span class='' style='color:white; font-size: 23px;font-weight:500'>Please fill out the form or feel free to call <br> us with any questions.</span><br><br>
-                <span class='' style='color:white; font-size: 23px;font-weight:500'><a href='https://maps.google.com/?q=Angus Glen Golf Club' target='_blank' style='color: white; text-decoration: none'>10080 Kennedy Rd. (at Angus Glen Golf Club) <br>Markham, ON L6C 1N9</a></span><br><br>
+                <span class='head-text uppercase' style=' font-size: 2.5rem;font-weight:700;'>Contact Us</span><br><br>
+                <span>Please fill out the form or feel free to call <br> us with any questions.</span><br><br>
+                <span><a href='https://maps.google.com/?q=Angus Glen Golf Club' target='_blank' style='color: white; text-decoration: none'>10080 Kennedy Rd. (at Angus Glen Golf Club) <br>Markham, ON L6C 1N9</a></span><br><br>
                 
                 <a href='mailto:jeff@jeffshustergolf.com' target='_blank' style='padding:5px;text-decoration:none;color:white;float:center'><span><img alt='Gmail' src='images/gmail-black.png' height='30px' width='30px'>&nbsp;&nbsp;<span style='font-size: 20px; font-weight:500'>jeff@jeffshustergolf.com</span></span></a>
                 <a href='tel:416-500-7070' target='_blank' style='padding:7px;text-decoration:none;color:white;float:center'><span><img alt='Phone' height='24px' width='24px' src='images/phone-black.png'>&nbsp;&nbsp;<span style='font-size: 20px;font-weight:500'>416-500-7070</span></span></a><br><br>
@@ -37,23 +38,24 @@
                 <span class='uppercase' style='color:black; opacity: 0.70; font-size: 25px;letter-spacing:18px;font-weight:700;'>Book a fitting now</span><br><br><br>
                 <form onsubmit='validateEmail()'>
                     <div class="form-row">
-                        <div class="col">
-                            <label class='uppercase col-md-7' style='font-weight: 500'>Your name (required)</label>
+                        <div class="col-md-6 col-sm-6">
+                            <label class='uppercase col-md-7' style='font-weight: 500'>Your name *</label>
                             <input class='col-lg' type='text' name='name' id='name' style='font-size:15px; height:50px' required/>
                         </div>
-                        <div class="col">
-                            <label class='uppercase col-md-7' style='font-weight: 500'>Your email (required)</label>
+                        <div class="col-md-6 col-sm-6">
+                            <label class='uppercase col-md-7' style='font-weight: 500'>Your email *</label>
                             <input class='col-lg' type='text' name='email-form' id='email-form' style='font-size:15px; height:50px' onfocusout='validateEmail()' required/>
+                            <p id='errorEmail' style='color: red; display:none'>Please enter valid email</p>
                         </div>
                     </div><br><br>
                     <div class="form-row">
-                        <div class="col">
-                            <label class='uppercase col-md-7' style='font-weight: 500'>Subject (required)</label><br>
+                        <div class="col-md-6 col-sm-6">
+                            <label class='uppercase col-md-7' style='font-weight: 500'>Subject *</label><br>
                             <input class='col-lg' type='text' name='subject' id='subject' style='font-size:15px; height:50px' required/>
                         </div>
-                        <div class="col">
-                            <label for='serviceInterest' class='uppercase col-md-9' style='font-weight: 500'>Service Interest (required)</label>
-                            <select class='col-lg' name='serviceInterest' id='serviceInterest' style='font-size:15px; height:50px;' required>
+                        <div class="col-md-6 col-sm-6">
+                            <label for='serviceInterest' class='uppercase col-md-9' style='font-weight: 500'>Service Interest</label>
+                            <select class='col-lg' name='serviceInterest' id='serviceInterest' style='font-size:15px; height:50px;' onchange='showTimeSlots()'>
                                 <option value="">- - -</option>
                                 <option value="Driver Fitting">Driver Fitting</option>
                                 <option value="Iron Fitting">Iron Fitting</option>
@@ -68,35 +70,53 @@
                             </select>
                         </div>
                     </div><br><br>
-                    <!--<div class="form-row">
-                        <div class="col">
+                    <div id='time_slots' class="form-row">
+                        <div class="col-md-6 col-sm-6">
                             <label class='uppercase col-md-9' style='font-weight: 500'>Choose your Date (required)</label>
-                            <input class='col-lg' type='date' name='date' id='date' style='font-size:15px; height:50px' required/>
+                            <input class='col-lg' type='date' name='date' id='date' style='font-size:15px; height:50px'/>
                         </div>
-                        <div class="col">
+                        <div class="col-md-6 col-sm-6">
                             <label class='uppercase col-md-9' style='font-weight: 500'>Select your Time (required)</label>
-                            <select class='col-lg' name='serviceInterest' id='serviceInterest' style='font-size:15px; height:50px;' required>
+                            <select class='col-lg' name='timeSlot' id='timeSlot' style='font-size:15px; height:50px;'>
                                 <option value="">- - -</option>
-                                <option value="1">09 am - 10 am</option>
-                                <option value="2">10 am - 11 am</option>
-                                <option value="3">11 am - Noon </option>
-                                <option value="4">01 pm - 02 pm</option>
-                                <option value="5">02 pm - 03 pm</option>
-                                <option value="6">03 pm - 04 pm</option>
-                                <option value="7">04 pm - 05 pm</option>
-                                <option value="Other">other</option>
+                                <option value="9">09:00 am</option>
+                                <option value="930">09:30 am</option>
+                                <option value="10">10:00 am</option>
+                                <option value="1030">10:30 am</option>
+                                <option value="11">11:00 am</option>
+                                <option value="1130">11:30 am</option>
+                                <option value="12">Noon</option>
+                                <option value="1230">12:30 pm</option>
+                                <option value="13">01:00 pm</option>
+                                <option value="1330">01:30 pm </option>
+                                <option value="14">02:00 pm</option>
+                                <option value="1430">02:30 pm</option>
+                                <option value="15">03:00 pm</option>
+                                <option value="1530">03:30 pm</option>
+                                <option value="16">04:00 pm</option>
+                                <option value="1630">04:30 pm</option>
+                                <option value="17">05:00 pm</option>
+                                <option value="1730">05:30 pm </option>
+                                <option value="18">06:00 pm</option>
+                                <option value="1830">06:30 pm</option>
+                                <option value="19">07:00 pm</option>
+                                <option value="1930">07:30 pm</option>
+                                <option value="20">08:00 pm</option>
+                                <option value="2030">08:30 pm </option>
+                                <option value="2100">09:00 pm</option>
+                                <option value="2130">09:30 pm</option>
                             </select>
                             <label class='' style='font-weight: 400; margin-top:10px;'><mark>*Please choose the start time, and service type will book required slots for you automatically, unless its not other.</mark></label>
                         </div>
-                    </div><br><br>-->
+                    </div><br><br>
                     <div class="form-row">
-                        <div class="col">
+                        <div class="col-md-12 col-sm-6">
                             <label class='uppercase col-md-2' style='font-weight: 500'>Message</label><br>
                             <textarea class='col-lg' class='col-xs-10' type='text' name='message' id='message' style='font-size:15px; height:150px; padding:15px'></textarea>
                         </div>
                     </div><br>
                     <div class="form-row">
-                        <div class="col">
+                        <div class="col-md-12 col-sm-6">
                              <input style='height:40px; width:100px; font-size: 20px; background-color:#3B3C36; color: white' id='submit' type='submit' value='Send'/>
                         </div>
                     </div>

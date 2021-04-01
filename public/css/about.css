@@ -7,13 +7,8 @@
     margin:auto;
 }
 
-.margin-about-left {
-    margin: 200px;
-}
-
-.margin-50lt {
-    margin-left: 50px;
-    margin-top: 50px;
+#heading{
+    margin-left: 200px;
 }
 
 #info {
@@ -21,7 +16,55 @@
     margin-top:80px;
     width: 75%;
     box-shadow: 1px 1px 5px #696969;
-    padding: 30px;
+}
+
+.headingText {
+    color:black; 
+    opacity: 0.70; 
+    font-size: 2rem;
+    font-weight:500;
+    display: inline-block;
+    margin-top:40px;
+    letter-spacing: 15px;
+}
+
+#imgProfile {
+    height: 300px; 
+    width: 250px; 
+    box-shadow: 1px 1px 5px #696969;
+    margin-top:-60px; 
+    margin-left:-60px;
+    margin-right: 30px;
+}
+
+#textDiv{
+    text-align: left;
+    width: 75%;
+    margin: auto;
+}
+
+.textSection{
+    font-size: 20px;
+    width:100%;
+}
+
+#quote{
+    display:flex;
+    margin:auto;
+    width:90%;
+}
+
+#quote > img {
+    height:80px; 
+    width:80px;
+}
+
+#quote > p {
+    font-size: 17px;
+    width:75%; 
+    margin:auto;
+    margin-left: 20px; 
+    opacity:0.80;
 }
 
 #info-contact {
@@ -46,7 +89,7 @@
     color: goldenrod;
 }
 
-.transparent_button_black {
+.transparent_button_black_about {
     color: black;
     padding:10px; 
     padding-left:50px; 
@@ -55,9 +98,9 @@
     border:2px solid black;
 }
 
-.transparent_button_black:hover {
+.transparent_button_black_about:hover {
     background-color: goldenrod;
-    font-size: 20px;
+    color: #fff;
 }
 
 .transparent_button_black_brand {
@@ -69,3 +112,102 @@
     padding-right:50px;
     letter-spacing:4px; 
 }
+
+#contactBox{
+    margin:auto; 
+    text-align:center;
+}
+
+#contactBox > #headingMiddle{
+    font-size: 1.5rem;
+}
+
+#contactBox > div {
+    display: inline-flex;
+    margin: auto;
+}
+
+@media only screen and (max-width: 680px){
+    .headingText {
+        font-size: 25px;
+        letter-spacing: 12px;
+    }
+    #lineVertical{
+        display: none;
+    }
+    #contactBox{
+        display: block;
+    }
+    #contactBox > div {
+        padding: -30px;
+        display: block;
+    }
+    #contactBox > div > div > a {
+        padding: 10px;
+        margin-top: 50px;
+    }
+
+    .transparent_button_black_about{
+        color: black;
+        padding:10px; 
+        padding-left:20px; 
+        padding-right:20px;
+        letter-spacing:2px; 
+        border:2px solid black;   
+    }
+
+    #info-contact{
+        margin: auto;
+        width: 95%;
+        margin-top:-150px;
+        box-shadow: 1px 1px 5px #696969;
+        text-align: center;
+        padding: 50px;
+        padding-top:50px;
+        padding-bottom:50px;
+        margin-bottom: 1%;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    #quote{
+        display: block;
+    }
+    #quote > p {
+        margin: auto;
+    }
+    #quote > img {
+        height: 50px;
+        width: 50px;
+    }
+    #quote > #back {
+        float: right;
+    }
+    #sgTextImg {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 1220px){
+    #root {
+        display: block;
+        text-align: center;
+    }
+    
+    #heading{
+        margin: 0px;
+    }
+
+    #info > #imgProfile { 
+        float: center;
+        height: 250px; 
+        width: 210px; 
+        margin: 0px;
+        margin-top: -80px;
+    }
+
+    #textDiv{
+        text-align: left;
+        margin: auto;
+    }
+}   

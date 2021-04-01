@@ -1,9 +1,39 @@
 #root {
-    padding:2%;
-    width: 90%;
+    text-align: center;
     margin: auto;
+    padding: 20px;
+    width: 100%;
 }
 
-td{
+ul > li{
+    display: inline-block;
+}
+
+span{
     padding: 30px;
+}
+
+@media only screen and (max-width: 680px){
+    li > span {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1220px){
+    #root {
+        text-align: center;
+        display: block;
+        padding: auto;
+        width: 100%;
+    }
+
+    
+    ul > li{
+        display: inline-block;
+    }
+
+    li > span {
+        display: block;
+        padding: 15px;
+    }
 }

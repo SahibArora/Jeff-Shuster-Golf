@@ -55,6 +55,10 @@ app.get('/contact', (req,res)=>{
     res.render('contact', {})
 })
 
+app.get('/shop', (req,res)=>{
+    res.render('shop/home.hbs', {})
+})
+
 app.get('*', (req,res)=>{
     res.send('Page does not exist')
 })
