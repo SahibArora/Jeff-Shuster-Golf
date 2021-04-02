@@ -46,6 +46,14 @@ a:hover{
     font-size: 35px
 }
 
+.header-text-black {
+    color: black;
+    margin-left:30px;
+    margin-top:50px;
+    letter-spacing: 12px;
+    font-size: 25px;
+}
+
 .transparent_button {
     color: white;
     padding:10px; 
@@ -129,7 +137,7 @@ a:hover{
         height: 70px;
         width: 140px;
         margin:30px 8px;
-    } 
+    }
 
     #top-header {
         background-image: url('../images/IMG-4036.PNG');
@@ -153,7 +161,6 @@ a:hover{
     #mobileHeader {
         display: block;
     }
-
   }
 
   @media only screen and (max-width: 1100px){
@@ -176,8 +183,16 @@ a:hover{
 
     .sec-text {
         padding: 0px;
-        margin-left: 30px;
+        margin-left: 8px;
         text-align: left;
+    }
+
+    .header-text-black {
+        color: black;
+        margin-left:8px;
+        margin-top:30px;
+        letter-spacing: 12px;
+        font-size: 25px;
     }
 
   }
