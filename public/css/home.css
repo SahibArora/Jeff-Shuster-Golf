@@ -173,6 +173,7 @@ a:hover{
     }
 
     .header-text-top {
+        text-align: center;
         color: white;
         margin-left: 30px;
         margin-top:50px;
