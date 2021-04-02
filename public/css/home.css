@@ -19,8 +19,8 @@ html {
 }
 
 .logo_a {
-    height: 17%;
-    width: 13%;
+    height: 90px;
+    width: 180px;
     margin:30px;
 }
 
@@ -63,6 +63,7 @@ a:hover{
     color: black;
     padding:10px; 
     padding-left:50px; 
+    font-size: 1rem;
     padding-right:50px;
     letter-spacing:4px; 
     border:2px solid black;
@@ -73,9 +74,10 @@ a:hover{
 }
 
   .sec_image {
-      height: 350px;
-      width: 600px;
+      height: 300px;
+      width: 500px;
       margin: auto;
+      margin: auto 100px;
   }
 
   .margin-right-end{
@@ -107,4 +109,79 @@ a:hover{
   .vertical-line{
       border-left: 2px solid #DCDCDC;
       height: 80%
+  }
+
+  #mobileHeader {
+    display: none;
+  }
+
+  #sec1{
+    display:flex;
+  }
+
+  #sec2{
+    display: flex; 
+    background-color: rgb(230,230,230);
+  }
+
+  @media only screen and (max-width: 940px){
+    .logo_a {
+        height: 70px;
+        width: 140px;
+        margin:30px;
+    } 
+
+    #top-header {
+        background-image: url('../images/IMG-4036.PNG');
+        position: relative;
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 110%;
+    }
+
+    #top-header > .header-text {
+        display: block;
+        text-align: center;
+    }
+
+    #desktopHeader {
+        display: none;
+    }
+
+    #mobileHeader {
+        display: block;
+    }
+
+  }
+
+  @media only screen and (max-width: 1100px){
+
+    #sec1{
+        display:block;
+        text-align: center;
+    }
+
+    #sec2{
+        display: block;
+        text-align: left;
+    }
+
+    .sec_image {
+        height: 300px;
+        width: 500px;
+        margin: auto;
+    }
+
+    .sec-text {
+        padding: 0px;
+        margin-left: 30px;
+        text-align: left;
+    }
+
+  }
+
+  @media only screen and (max-width: 1220px){
+
   }

@@ -17,10 +17,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script>
-            alert('Completed - \nDesign -\n1. Header (Mobile Friendly)\n2. Footer (Mobile Friendly)\n3. Home\n4. About (Mobile Friendly)\n5. Services (Mobile Friendly)\n6. Form [Design] (Mobile Friendly)\n7. Brands (Mobile Friendly)\n\nWorking On ... \n\n1. Shop\n')
+            //alert('Completed - \nDesign -\n1. Header (Mobile Friendly)\n2. Footer (Mobile Friendly)\n3. Home\n4. About (Mobile Friendly)\n5. Services (Mobile Friendly)\n6. Form [Design] (Mobile Friendly)\n7. Brands (Mobile Friendly)\n\nWorking On ... \n\n1. Shop\n')
         </script>
     </head>
-    <body>
+    <body id='root_home'>
+        
         <div id='top-header'>
             <a href='/' style='opacity:1;'><img class='logo_a' alt='Jeff Shuster Golf' src='images/logo.png'/></a>
             <div class='social_media_links' style='float:right'>
@@ -35,18 +36,26 @@
                 <a href="/contact" class='btn' style='margin-top:20px;opacity:1'><span class='transparent_button'>Book a Fitting</span></a>
             </div>
         </div>
-        <div class="topnav">
+
+
+        <div id='desktopHeader' class="topnav">
             <div class='uppercase menuHome'>
                 <a href="/about" style='text-decoration:none'>About |</a>
                 <a href="/services" style='text-decoration:none'>Services |</a>
                 <a href="/ourbrands" style='text-decoration:none'>Our Brands |</a>
                 <a href="/contact" style='text-decoration:none'>Contact |</a>
                 <a href="/shop" style='text-decoration:none'>Shop now</a>
-    </div>
-</div>
-        <div class='sec' style='display:flex'>
+            </div>
+        </div>
+
+        <div id='mobileHeader'>
+            {{>header}}
+        </div>
+
+
+        <div class='sec' id='sec1'>
             <img class='sec_image' src='images/sec-1_head.png'/>
-            <div class='margin-right-end sec-text' style='float:right'>
+            <div class='sec-text' style='float:right'>
                 <h1 class='header-text uppercase' style='color: black; font-size: 25px; letter-spacing: 13px'>next level golf club fittings</h1><br>
                 <p class='sec-text' style='font-size: 18px; font-weight: 100'>Take your golf game to the next level with Jeff Shuster Golf, your best source</p>
                 <p class='sec-text' style='font-size: 18px; font-weight: 100'>for premium custom golf clubs, and personalized golf equipment, fit to your </p>
@@ -58,7 +67,7 @@
             </div>
         </div>
 
-        <div class='sec' style='display: flex; background-color: rgb(230,230,230);'>
+        <div class='sec' id='sec2'>
             <div style='margin: 20px; display:box'>
                 <h1 class='header-text uppercase' style='color: black; font-size: 25px; letter-spacing: 10px; opacity: 0.70'>CUSTOM GOLF CLUBS FOR OPTIMAL PERFORMANCE RESULTS.</h1><br>
                 <p class='sec-text' style='font-size: 18px; font-weight: 100; opacity:0.90'>Not satisfied with the way you’re playing? Let us help you improve your game.</p><br>
@@ -80,6 +89,8 @@
                 <span class='uppercase' style='letter-spacing: 5px;font-size: 25px; font-weight: 500;opacity:.70;overflow: hidden;white-space: nowrap;'>Golf Club Repairs</span>
             </div>
         </div>
+
+
         <div class='sec' style='display:flex'>
             <div>
                 <h1 class='header-text uppercase' style='color: black; font-size: 25px; letter-spacing: 10px;'>CUSTOM GOLF CLUBS</h1><br>
