@@ -95,6 +95,12 @@ a:hover{
       margin: auto;
   }
 
+  .sec_image-shaft {
+    height: 300px;
+    width: 600px;
+    margin: auto;
+  }
+
   .margin-right-end{
       margin-right: 10px
   }
@@ -241,6 +247,11 @@ a:hover{
         margin: auto;
       }      
     
+      .sec_image-shaft {
+        height: 220px;
+        width: 350px;
+        margin: auto;
+      }
 
   }
 
