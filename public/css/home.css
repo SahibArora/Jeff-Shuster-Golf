@@ -54,6 +54,14 @@ a:hover{
     font-size: 25px;
 }
 
+.header-text-top {
+    color: white;
+    margin-left: 30px;
+    margin-top:70px;
+    letter-spacing: 15px;
+    font-size: 35px
+}
+
 .transparent_button {
     color: white;
     padding:10px; 
@@ -129,7 +137,24 @@ a:hover{
 
   #sec2{
     display: flex; 
+    padding: 20px;
     background-color: rgb(230,230,230);
+  }
+
+  #sec2-div2{
+    margin: auto; 
+    padding: 80px 50px;
+    text-align: center;
+    width: 70%; 
+    background-color: #DCDCDC;
+  }
+  #sec2-div2 > span{
+    letter-spacing: 5px;
+    font-size: 25px; 
+    font-weight: 500;
+    opacity:.70;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   @media only screen and (max-width: 940px){
