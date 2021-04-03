@@ -191,6 +191,12 @@ a:hover{
     width:700px;
 }
 
+.sec_image_trackman {
+    height: 300px;
+    width: 350px;
+    margin: 70px 100px;
+}
+
   @media only screen and (max-width: 940px){
     .logo_a {
         height: 70px;
@@ -263,10 +269,10 @@ a:hover{
         margin: auto;
       }
       .sec_image_trackman {
-        height: 340px;
-        width: 500px;
-        margin: auto;
-      }      
+        height: 250px;
+        width: 300px;
+        margin: 20px;
+    }
     
       .sec_image-shaft {
         height: 220px;
