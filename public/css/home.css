@@ -129,7 +129,6 @@ a:hover{
 
   .vertical-line{
       border-left: 2px solid #DCDCDC;
-      height: 80%
   }
 
   #mobileHeader {
@@ -244,7 +243,7 @@ a:hover{
     text-align: right;
 }
 
-  @media only screen and (max-width: 680px){
+  @media only screen and (max-width: 500px){
     .brand_full {
         display:none
       }
@@ -266,7 +265,8 @@ a:hover{
     }
 
     .sec7-content-heading{
-        font-size: 45px; 
+        font-size: 40px; 
+        margin: 10px;
         opacity: .80; 
         font-weight: 400; 
         text-align: center;
