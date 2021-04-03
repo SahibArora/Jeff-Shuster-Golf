@@ -92,8 +92,7 @@ a:hover{
   .sec_image {
       height: 300px;
       width: 500px;
-      margin: auto;
-      margin: auto 100px;
+      margin: 50px;
   }
 
   .margin-right-end{
@@ -157,6 +156,14 @@ a:hover{
     white-space: nowrap;
   }
 
+  .sec3 {
+    display:flex;
+  }  
+
+  .sec4{
+      display: flex;
+  }
+
   @media only screen and (max-width: 940px){
     .logo_a {
         height: 70px;
@@ -206,6 +213,30 @@ a:hover{
         font-size: 25px
     }
 
+    #sec2-div2 > span{
+        letter-spacing: 5px;
+        font-size: 20px; 
+        font-weight: 500;
+        opacity:.70;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      .sec3 {
+        display:block;
+      }  
+    
+      .sec4{
+          display: block;
+      }
+
+      .sec_image {
+        height: 400px;
+        width: 600px;
+        margin: auto;
+    }
+    
+
   }
 
   @media only screen and (max-width: 1100px){
@@ -218,12 +249,6 @@ a:hover{
     #sec2{
         display: block;
         text-align: left;
-    }
-
-    .sec_image {
-        height: 200px;
-        width: 350px;
-        margin: auto;
     }
 
     .sec-text {
