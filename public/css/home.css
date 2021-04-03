@@ -92,7 +92,7 @@ a:hover{
   .sec_image {
       height: 300px;
       width: 500px;
-      margin: 50px;
+      margin: auto;
   }
 
   .margin-right-end{
@@ -219,7 +219,7 @@ a:hover{
         font-weight: 500;
         opacity:.70;
         overflow: hidden;
-        white-space: nowrap;
+        white-space: pre-wrap;
       }
 
       .sec3 {
@@ -231,10 +231,15 @@ a:hover{
       }
 
       .sec_image {
-        height: 400px;
-        width: 600px;
+        height: 220px;
+        width: 350px;
         margin: auto;
-    }
+      }
+      .sec_image_trackman {
+        height: 340px;
+        width: 500px;
+        margin: auto;
+      }      
     
 
   }
