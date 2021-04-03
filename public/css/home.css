@@ -115,7 +115,7 @@ a:hover{
       margin-left: 30px;
   }
 
-  .sec-5 {
+  .sec5 {
       background-image: url('../images/sec-5-shaft-2.jpg');
       opacity:0.90;
       position: relative;
@@ -168,6 +168,17 @@ a:hover{
 
   .sec4{
       display: flex;
+  }
+
+  .sec5 > div{
+    margin: auto;
+    margin-right:30px;
+    padding: 10px; 
+    text-align: center;
+    height: 90%; 
+    width: 70%; 
+    background-color: white;
+    box-shadow: 10px 10px 20px black;
   }
 
   @media only screen and (max-width: 940px){
@@ -251,6 +262,16 @@ a:hover{
         height: 220px;
         width: 350px;
         margin: auto;
+      }
+
+      .sec5 > div{
+        margin: auto;
+        padding: 10px; 
+        text-align: center;
+        height: 90%; 
+        width: 95%; 
+        background-color: white;
+        box-shadow: 10px 10px 20px black;
       }
 
   }
