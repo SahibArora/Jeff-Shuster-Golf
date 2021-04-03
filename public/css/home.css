@@ -184,18 +184,38 @@ a:hover{
   .sec6 {
       display: flex;
   }
+  .sec6 > div {
+      margin: auto;
+  }
 
-  .sec6 > img {
+  .brand_full {
     margin:auto; 
     height:200px; 
     width:700px;
-}
+  }
+
+  .brand_half {
+    display: none;
+  }
 
 .sec_image_trackman {
     height: 300px;
     width: 350px;
     margin: 70px 100px;
 }
+
+  @media only screen and (max-width: 680px){
+    .brand_full {
+        display:none
+      }
+    
+      .brand_half {
+        margin: auto;
+        height:200px;
+        width: 350px;
+        display: block;
+      }
+  }
 
   @media only screen and (max-width: 940px){
     .logo_a {
@@ -268,6 +288,7 @@ a:hover{
         width: 350px;
         margin: auto;
       }
+
       .sec_image_trackman {
         height: 250px;
         width: 300px;
@@ -304,12 +325,6 @@ a:hover{
 
       .sec6 {
         display: block;
-    }
-
-    .sec6 > img {
-        margin:auto; 
-        height:90px; 
-        width:330px;
     }
 
   }
