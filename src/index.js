@@ -8,6 +8,8 @@ var app = express()
 var hbs = require('hbs')
 var bodyParser = require('body-parser')
 
+const emailSubscribeRouter = require('./routers/email')
+
 // Database Connection
 require('./db-connection/mongoose')
 
@@ -19,6 +21,7 @@ app.use(bodyParser.urlencoded({
 })) // For understanding form data
 
 app.use(express.json())
+app.use(emailSubscribeRouter)
 //app.use(userRouter)
 
 var port = process.env.PORT || 2000

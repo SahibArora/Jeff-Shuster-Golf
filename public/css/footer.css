@@ -92,6 +92,10 @@ button {
     display: none;
 }
 
+.subscribeButton {
+    opacity: 0.5;
+}
+
 @media only screen and (max-width: 1390px){
     #bgSc{
         display: none;

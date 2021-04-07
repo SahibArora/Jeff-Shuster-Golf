@@ -10,12 +10,14 @@
                 </div>
                 <div class='section'>
                     <h5>JOIN OUR NEWSLETTER</h5>
-                    <input id='emailInput' type='email' placeholder='Email Address'><button id='bgSc'>Subscribe</button><br>
-                    <div id='inputCheck'>
-                        <input id='confirmCheck' type='checkbox'>&nbsp;I agree to receive email notifications from Jeff Shuster. <br>&nbsp;I can unsubscribe at any time.</input>{{!--;
-                        <label for='confirmCheck'></label><br> --}}
-                    </div>
-                    <button id='sgSc'>Subscribe</button>
+                    <form action='/emailSubscribe' method='POST'>
+                        <input id='emailInput' type='email' name='email' placeholder='Email Address'><button id='bgSc' class='subscribeButton' disabled>Subscribe</button><br>
+                        <div id='inputCheck'>
+                            <input id='confirmCheck' type='checkbox' onclick='showButton()' unchecked>&nbsp;I agree to receive email notifications from Jeff Shuster. <br>&nbsp;I can unsubscribe at any time.</input>{{!--;
+                            <label for='confirmCheck'></label><br> --}}
+                        </div>
+                        <button id='sgSc' type='submit' class='subscribeButton' disabled>Subscribe</button>
+                    </form>
                 </div>
             </div>
             <div id='bottombox'>
@@ -30,3 +32,18 @@
                 </span>
             </div>
 </footer>
+<script>    
+    function showButton(){
+        if(document.getElementById('confirmCheck').checked == true){
+            for(var i = 0; i < document.getElementsByClassName('subscribeButton').length; i++){
+                document.getElementsByClassName('subscribeButton')[i].style.opacity = 1
+                document.getElementsByClassName('subscribeButton')[i].disabled = false
+            }
+        }else{
+            for(var i = 0; i < document.getElementsByClassName('subscribeButton').length; i++){
+                document.getElementsByClassName('subscribeButton')[i].style.opacity = 0.5
+                document.getElementsByClassName('subscribeButton')[i].disabled = true
+            }  
+        }
+    }
+</script>
