@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+
+    <link rel="icon" href="/images/logo-top.png">
+    <link rel='stylesheet' href='/css/home.css'/>
+    <link rel='stylesheet' href='/css/header.css'/>
+    <link rel='stylesheet' href='/css/footer.css'/>
+    <link rel='stylesheet' href='/css/admin.css'/>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src='/js/admin.js'></script>
+
+    <title>Jeff Shuster - Admin Page</title>
+</head>
+<body>
+    {{>header}}
+
+    <div id='main'>
+        <div class="sidenav">
+            <a onclick='showContent("bookings")' href="#">Bookings</a>
+            <a onclick='showContent("messages")' href="#">Messages</a>
+            <a onclick='showContent("subscribers")' href="#">Subscribers</a>
+            <br><br>
+            <a href="/admin/logout" style='font-size: 20px'>Logout</a>
+            <a href="/admin/logoutall" style='font-size: 20px'>Logout Everywhere</a>
+        </div>
+
+        <div id='content'>
+
+            <div id='bookings' style='display: none'>
+                <div id='content-title'>
+                    <h1>Bookings</h1>
+                    <hr>
+                </div>
+                <div id='content-main'>
+                    <div id='listBookings'>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id='messages' style='display: none'>
+                <div id='content-title'>
+                    <h1>Messages</h1>
+                    <hr>
+                </div>
+                <div id='content-main'>
+                    <div id='listMessages'>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id='subscribers' style='display: none'>
+                <div id='content-title'>
+                    <h1>Subscribers</h1>
+                    <hr>
+                </div>
+                <div id='content-main'>
+                    <div id='listEmails'>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    {{>footer}}
+</body>
+</html>

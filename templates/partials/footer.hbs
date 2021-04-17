@@ -25,25 +25,11 @@
                     <p class='sec'>Copyright 2021 © Jeff Shuster Golf</p> 
                     <p class='sec' id='creator'>Website by <a href='mailto:sarora37@outlook.com' style='color: white;'><strong>Sahib Arora</a></strong></p>
                     <p class='sec' id='socialLinks'>
-                        <a href='https://www.instagram.com/jeffshustergolf/' target='_blank'><img alt='Instagram' src='images/instagram.png'></a>
-                        <a href='https://www.facebook.com/jeffshustergolf' target='_blank' ><img alt='Facebook' src='images/facebook.png'></a>
-                        <a href='https://twitter.com/jeffshustergolf' target='_blank' ><img alt='Twitter' src='images/twitter.png'></a>
+                        <a href='https://www.instagram.com/jeffshustergolf/' target='_blank'><img alt='Instagram' src='/images/instagram.png'></a>
+                        <a href='https://www.facebook.com/jeffshustergolf' target='_blank' ><img alt='Facebook' src='/images/facebook.png'></a>
+                        <a href='https://twitter.com/jeffshustergolf' target='_blank' ><img alt='Twitter' src='/images/twitter.png'></a>
                     </p>
                 </span>
             </div>
 </footer>
-<script>    
-    function showButton(){
-        if(document.getElementById('confirmCheck').checked == true){
-            for(var i = 0; i < document.getElementsByClassName('subscribeButton').length; i++){
-                document.getElementsByClassName('subscribeButton')[i].style.opacity = 1
-                document.getElementsByClassName('subscribeButton')[i].disabled = false
-            }
-        }else{
-            for(var i = 0; i < document.getElementsByClassName('subscribeButton').length; i++){
-                document.getElementsByClassName('subscribeButton')[i].style.opacity = 0.5
-                document.getElementsByClassName('subscribeButton')[i].disabled = true
-            }  
-        }
-    }
-</script>
+<script src='/js/footer.js'></script>
