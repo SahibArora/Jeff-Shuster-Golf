@@ -53,7 +53,6 @@ function showTimeSlots() {
         document.getElementById('message').required = true
         document.getElementById('messageRequired').style.display = 'inline'
     }else{
-        document.getElementById('timeSlot').value = ''
         document.getElementById('time_slots').style.display = ''
         document.getElementById('date').required = true
         document.getElementById('timeSlot').required = true
@@ -65,6 +64,7 @@ function showTimeSlots() {
 
 function datePicked(){
     document.getElementById('timeSlot').disabled = false
+    document.getElementById('timeSlot').value = ''
     if(document.getElementById('date').value == ''){
 
     }else{
