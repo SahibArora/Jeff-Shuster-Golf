@@ -26,6 +26,13 @@ function showBookings() {
     fetch('/admin/getContact').then(function(res){
         res.json().then(async function(data){
             if(data){
+                data = data.sort((a, b) => {
+                    if(new Date(a.date).getTime() == new Date(b.date).getTime()){
+                        return a.timeSlot - b.timeSlot
+                    }else{
+                        return new Date(a.date) - new Date(b.date)
+                    }
+                })
                 //const serviceSlots = ['0900','0930','1000','1030','1100','1130','1200','1230','1300','1330','1400','1430','1500','1530','1600','1630','1700','1730','1800','1830','1900','1930','2000','2030','2100','2130']
                 var numberOfSlots = 0;
                 var noDate = 0;
@@ -75,6 +82,9 @@ function showMessages(){
     fetch('/admin/getContact').then(function(res){
         res.json().then(async function(data){
             if(data){
+                data = data.sort((a, b) => {
+                    return new Date(a.createdAt) - new Date(b.createdAt)
+                })
                 var element = document.getElementById('listMessages');
                 var html = '<table style="border: 1px solid black; border-collapse: separate;border-spacing: 30px;"><tr><td><strong>Name</strong></td><td><strong>Email</strong></td><td><strong>Subject</strong></td><td><strong>Message</strong></td><td><strong>Has a Booking</strong></td><td><strong>Date and Time Message Sent</strong></td><td><strong>Action</strong></td></tr>'
                 var noData = 0
