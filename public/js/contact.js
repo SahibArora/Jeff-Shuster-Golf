@@ -47,12 +47,13 @@ function showTimeSlots() {
         document.getElementById('date').required = false
         document.getElementById('date').value = ''
         document.getElementById('errorDate').style.display = 'none'
-            document.getElementById('date').style.border = '1px solid black'
+        document.getElementById('date').style.border = '1px solid black'
         document.getElementById('timeSlot').required = false
         document.getElementById('timeSlot').value = ''
         document.getElementById('message').required = true
         document.getElementById('messageRequired').style.display = 'inline'
     }else{
+        document.getElementById('timeSlot').value = ''
         document.getElementById('time_slots').style.display = ''
         document.getElementById('date').required = true
         document.getElementById('timeSlot').required = true
