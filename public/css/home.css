@@ -19,8 +19,8 @@ html {
 }
 
 .logo_a {
-    height: 17%;
-    width: 13%;
+    height: 90px;
+    width: 180px;
     margin:30px;
 }
 
@@ -46,6 +46,22 @@ a:hover{
     font-size: 35px
 }
 
+.header-text-black {
+    color: black;
+    margin-left:30px;
+    margin-top:50px;
+    letter-spacing: 12px;
+    font-size: 25px;
+}
+
+.header-text-top {
+    color: white;
+    margin-left: 30px;
+    margin-top:40px;
+    letter-spacing: 15px;
+    font-size: 35px
+}
+
 .transparent_button {
     color: white;
     padding:10px; 
@@ -63,6 +79,7 @@ a:hover{
     color: black;
     padding:10px; 
     padding-left:50px; 
+    font-size: 1rem;
     padding-right:50px;
     letter-spacing:4px; 
     border:2px solid black;
@@ -73,9 +90,15 @@ a:hover{
 }
 
   .sec_image {
-      height: 350px;
-      width: 600px;
+      height: 300px;
+      width: 500px;
       margin: auto;
+  }
+
+  .sec_image-shaft {
+    height: 300px;
+    width: 600px;
+    margin: auto;
   }
 
   .margin-right-end{
@@ -92,7 +115,7 @@ a:hover{
       margin-left: 30px;
   }
 
-  .sec-5 {
+  .sec5 {
       background-image: url('../images/sec-5-shaft-2.jpg');
       opacity:0.90;
       position: relative;
@@ -100,11 +123,314 @@ a:hover{
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      height: 65%;
+      height: 400px;
       text-align:right;
   }
 
   .vertical-line{
       border-left: 2px solid #DCDCDC;
-      height: 80%
+  }
+
+  #mobileHeader {
+    display: none;
+  }
+
+  #sec1{
+    display:flex;
+  }
+
+  #sec2{
+    display: flex; 
+    padding: 20px;
+    background-color: rgb(230,230,230);
+  }
+
+  #sec2-div2{
+    margin: auto; 
+    padding: 80px 50px;
+    text-align: center;
+    width: 70%; 
+    background-color: #DCDCDC;
+  }
+  #sec2-div2 > span{
+    letter-spacing: 5px;
+    font-size: 25px; 
+    font-weight: 500;
+    opacity:.70;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .sec3 {
+    display:flex;
+  }  
+
+  .sec4{
+      display: flex;
+  }
+
+  .sec5 > div{
+    margin: auto;
+    margin-right:30px;
+    padding: 10px; 
+    text-align: center;
+    height: 90%; 
+    width: 70%; 
+    background-color: white;
+    box-shadow: 10px 10px 20px black;
+  }
+
+  .sec6 {
+      display: flex;
+  }
+  .sec6 > div {
+      margin: auto;
+  }
+
+  .brand_full {
+    margin:auto; 
+    height:200px; 
+    width:700px;
+  }
+
+  .brand_half {
+    display: none;
+  }
+
+.sec_image_trackman {
+    height: 300px;
+    width: 350px;
+    margin: 70px 100px;
+}
+
+.sec7 {
+    display: flex; background-color: rgb(230,230,230);
+}
+
+.sec7 > div {
+    margin: auto; 
+    display: box; 
+    padding: 50px
+}
+
+#sec7-content {
+    display: flex;
+}
+
+.sec8 {
+    display:flex;
+}
+
+.sec8 > img {
+    height: 300px; 
+    width: 50%;
+    margin-left: 20px
+}
+
+.sec7 > div > h1 {
+    margin-top:0px; 
+    text-align: center; 
+    color: black; 
+    font-size: 35px; 
+    letter-spacing: 15px; 
+    opacity: 0.70
+}
+
+.sec7-content-heading{
+    font-size: 55px; 
+    opacity: .80; 
+    font-weight: 400; 
+    text-align: right;
+}
+
+  @media only screen and (max-width: 500px){
+    .brand_full {
+        display:none
+      }
+    
+      .brand_half {
+        margin: auto;
+        height:200px;
+        width: 350px;
+        display: block;
+      }
+
+      .sec7 > div > h1 {
+        margin-top:0px; 
+        text-align: center; 
+        color: black; 
+        font-size: 20px; 
+        letter-spacing: 12px; 
+        opacity: 0.70
+    }
+
+    .sec7-content-heading{
+        font-size: 40px; 
+        margin-bottom:20px;
+        opacity: .80; 
+        font-weight: 400; 
+        text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: 940px){
+    .logo_a {
+        height: 70px;
+        width: 140px;
+        margin:30px 8px;
+    }
+
+    #top-header {
+        background-image: url('../images/IMG-4036.PNG');
+        position: relative;
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 110%;
+    }
+
+    #top-header > .header-text {
+        display: block;
+        text-align: center;
+    }
+
+    #desktopHeader {
+        display: none;
+    }
+
+    #mobileHeader {
+        display: block;
+    }
+
+    .transparent_button_black{
+        color: black;
+        padding:10px; 
+        padding-left:10px; 
+        font-size: 1rem;
+        padding-right:10px;
+        letter-spacing:4px; 
+        border:2px solid black;   
+    }
+
+    .header-text-top {
+        text-align: center;
+        color: white;
+        margin-left: 30px;
+        margin-top:50px;
+        letter-spacing: 15px;
+        font-size: 25px
+    }
+
+    #sec2-div2 > span{
+        letter-spacing: 5px;
+        font-size: 20px; 
+        font-weight: 500;
+        opacity:.70;
+        overflow: hidden;
+        white-space: pre-wrap;
+      }
+
+      .sec3 {
+        display:block;
+      }  
+    
+      .sec4{
+          display: block;
+      }
+
+      .sec_image {
+        height: 220px;
+        width: 350px;
+        margin: auto;
+      }
+
+      .sec_image_trackman {
+        height: 250px;
+        width: 300px;
+        margin: 20px;
+    }
+    
+      .sec_image-shaft {
+        height: 220px;
+        width: 350px;
+        margin: auto;
+      }
+
+      .sec5 {
+        background-image: url('../images/sec-5-shaft-2.jpg');
+        opacity:0.90;
+        position: relative;
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 550px;
+        text-align: center;
+    }
+
+      .sec5 > div{
+        margin: auto;
+        padding: 10px; 
+        text-align: center;
+        height: 90%; 
+        width: 95%; 
+        background-color: white;
+        box-shadow: 10px 10px 20px black;
+      }
+
+      .sec6 {
+        display: block;
+    }
+
+    .sec7 {
+        display: block;
+    }
+
+    #sec7-content {
+        display: block;
+    }
+
+    .sec8 {
+        text-align: center;
+        margin: auto;
+        display: block;
+    }
+
+    .sec8 > img {
+        margin: auto;
+        height: 270px; 
+        width: 350px;
+    }
+  }
+
+  @media only screen and (max-width: 1100px){
+
+    #sec1{
+        display:block;
+        text-align: center;
+    }
+
+    #sec2{
+        display: block;
+        text-align: left;
+    }
+
+    .sec-text {
+        padding: 0px;
+        margin: 15px;
+        text-align: left;
+    }
+
+    .header-text-black {
+        color: black;
+        margin:15px;
+        margin-top:30px;
+        letter-spacing: 12px;
+        font-size: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 1220px){
+
   }

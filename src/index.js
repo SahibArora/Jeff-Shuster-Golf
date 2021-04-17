@@ -7,6 +7,12 @@ var app = express()
 
 var hbs = require('hbs')
 var bodyParser = require('body-parser')
+const cookieParser = require('cookie-parser')
+
+const emailSubscribeRouter = require('./routers/email')
+const contactInfoRouter = require('./routers/contactInfo')
+const bookingRouter = require('./routers/booking')
+const userRouter = require('./routers/user')
 
 // Database Connection
 require('./db-connection/mongoose')
@@ -18,7 +24,13 @@ app.use(bodyParser.urlencoded({
     extended: true
 })) // For understanding form data
 
+app.use(cookieParser())
 app.use(express.json())
+app.use(emailSubscribeRouter)
+app.use(contactInfoRouter)
+app.use(bookingRouter)
+app.use(userRouter)
+
 //app.use(userRouter)
 
 var port = process.env.PORT || 2000
@@ -55,12 +67,12 @@ app.get('/contact', (req,res)=>{
     res.render('contact', {})
 })
 
-app.get('/shop', (req,res)=>{
-    res.render('shop/home.hbs', {})
+app.get('/error', (req, res) => {
+    res.render('error', {})
 })
 
 app.get('*', (req,res)=>{
-    res.send('Page does not exist')
+    res.render('404', {})
 })
 
 app.listen(port, (req,res)=>{

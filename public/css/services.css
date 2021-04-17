@@ -145,7 +145,7 @@ li > span
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        opacity:0.90;
+        opacity:1;
         height:120%;
     }
 }
