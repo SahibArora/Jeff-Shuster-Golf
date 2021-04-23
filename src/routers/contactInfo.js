@@ -23,39 +23,13 @@ contactInfoRouter.get('/admin/getContact', auth, async (req, res)=>{
     }
 })
 
-contactInfoRouter.get('/admin/delete/contactInfo/booking/:_id', async (req, res) => {
+contactInfoRouter.get('/admin/delete/contactInfo/:_id', async (req, res) => {
     try{
         var _id = req.params._id
         var contactInfo = await ContactInfo.findOne({_id})
 
-        var url = '/admin/booking/delete/'+contactInfo.date+'/'+contactInfo.timeSlot+'/'+contactInfo.serviceInterest 
-
-        if(contactInfo.message == ''){
-            await contactInfo.remove()
-        }else{
-            contactInfo.date = null
-            contactInfo.timeSlot = ''
-            await contactInfo.save()
-        }
+        await contactInfo.remove()
         
-        res.redirect(url)
-    }catch(e){
-        res.status(500).redirect('/error')
-    }
-
-})
-
-contactInfoRouter.get('/admin/delete/contactInfo/message/:_id', async (req, res) => {
-    try{
-        var _id = req.params._id
-        var contactInfo = await ContactInfo.findOne({_id})
-
-        if(contactInfo.date == null){
-            await contactInfo.remove()
-        }else{
-            contactInfo.message = ''
-            await contactInfo.save()
-        }
         res.redirect('/admin')
 
     }catch(e){

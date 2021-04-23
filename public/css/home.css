@@ -20,7 +20,7 @@ html {
 
 .logo_a {
     height: 90px;
-    width: 180px;
+    width: 170px;
     margin:30px;
 }
 
@@ -276,7 +276,7 @@ a:hover{
   @media only screen and (max-width: 940px){
     .logo_a {
         height: 70px;
-        width: 140px;
+        width: 130px;
         margin:30px 8px;
     }
 
