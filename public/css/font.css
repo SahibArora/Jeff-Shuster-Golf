@@ -1,0 +1,90 @@
+@font-face {
+    font-family: Organetto-Hair;
+    src: url('../fonts/Organetto/Organetto-Hair.ttf');
+}
+
+@font-face {
+    font-family: Organetto-Light;
+    src: url('../fonts/Organetto/Organetto-Light.ttf');
+}
+
+@font-face {
+    font-family: Organetto-Regular;
+    src: url('../fonts/Organetto/Organetto-Regular.ttf');
+}
+
+@font-face {
+    font-family: Organetto-Bold;
+    src: url('../fonts/Organetto/Organetto-Bold.ttf');
+}
+
+@font-face {
+    font-family: Organetto-HairExt;
+    src: url('../fonts/Organetto/Organetto-HairExt.ttf');
+}
+
+@font-face {
+    font-family: Organetto-LightExt;
+    src: url('../fonts/Organetto/Organetto-LightExt.ttf');
+}
+
+@font-face {
+    font-family: Organetto-RegularExt;
+    src: url('../fonts/Organetto/Organetto-RegularExt.ttf');
+}
+
+@font-face {
+    font-family: Organetto-BoldExt;
+    src: url('../fonts/Organetto/Organetto-BoldExt.ttf');
+}
+
+@font-face {
+    font-family: Organetto-Test;
+    src: url('../fonts/Organetto/Organetto-Thin.ttf');
+}
+
+.Organetto-Hair{
+    font-family: Organetto-Hair;
+}
+
+.Organetto-Light{
+    font-family: Organetto-Light;
+}
+
+.Organetto-Regular{
+    font-family: Organetto-Regular;
+}
+
+.Organetto-Bold{
+    font-family: Organetto-Bold;
+}
+
+.Organetto-HairExt{
+    font-family: Organetto-HairExt;
+}
+
+.Organetto-LightExt{
+    font-family: Organetto-LightExt;
+}
+
+.Organetto-RegularExt{
+    font-family: Organetto-RegularExt;
+}
+
+
+.Organetto-BoldExt{
+    font-family: Organetto-BoldExt;
+}
+
+.Organetto-Test {
+    font-family: Organetto-Test;   
+}
+
+@font-face {
+    font-family: TypeOldBlackLight;
+    src: url('../fonts/Typold/The\ Northern\ Block\ Ltd\ -\ Typold\ Extended\ Light.otf');
+}
+
+.TypeOldBlackLight {
+    font-family: TypeOldBlackLight;   
+}

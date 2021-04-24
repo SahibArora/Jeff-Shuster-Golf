@@ -63,8 +63,8 @@
 
 .service-box{
     margin: auto;
-    width: 300px;
-    height:300px;
+    width: 350px;
+    height:350px;
     margin-bottom: 20px;
     background-image:  linear-gradient( rgba(255,255,255), rgba(255,255,255) );
     position: relative;
@@ -72,7 +72,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10px;
+    padding: 30px;
     box-shadow:1px 1px 10px rgba(0,0,0, 0.3);
     text-align: center;
 }

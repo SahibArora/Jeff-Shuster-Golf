@@ -5,7 +5,7 @@ html, body {
 }
 
 html {
-    font-family: "Times New Roman", Times, serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 #top-header {
@@ -50,24 +50,27 @@ a:hover{
     color: black;
     margin-left:30px;
     margin-top:50px;
-    letter-spacing: 12px;
-    font-size: 25px;
+    margin-right: 20px;
+    letter-spacing: 15px;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .header-text-top {
     color: white;
     margin-left: 30px;
-    margin-top:40px;
+    margin-top:30px;
     letter-spacing: 15px;
     font-size: 35px
 }
 
 .transparent_button {
+    margin-left: -10px;
     color: white;
-    padding:10px; 
+    padding:13px; 
     padding-left:50px; 
     padding-right:50px;
-    letter-spacing:4px; 
+    letter-spacing:8px; 
     border:2px solid white;
 }
 
@@ -90,7 +93,7 @@ a:hover{
 }
 
   .sec_image {
-      height: 300px;
+      height: 250px;
       width: 500px;
       margin: auto;
   }
@@ -106,13 +109,13 @@ a:hover{
   }
 
   .sec {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .sec-text {
-      padding: 0px;
       margin-left: 30px;
+      margin-right: 5px;
   }
 
   .sec5 {
@@ -141,15 +144,20 @@ a:hover{
 
   #sec2{
     display: flex; 
-    padding: 20px;
+    padding: 0px;
     background-color: rgb(230,230,230);
+  }
+
+  #sec2-div1{
+    width: 60%;
+    margin-right: 20px;
   }
 
   #sec2-div2{
     margin: auto; 
     padding: 80px 50px;
     text-align: center;
-    width: 70%; 
+    width: 50%; 
     background-color: #DCDCDC;
   }
   #sec2-div2 > span{
@@ -183,14 +191,11 @@ a:hover{
   .sec6 {
       display: flex;
   }
-  .sec6 > div {
-      margin: auto;
-  }
 
   .brand_full {
-    margin:auto; 
-    height:200px; 
-    width:700px;
+    margin:100px 40px;
+    height:150px; 
+    width:500px;
   }
 
   .brand_half {
@@ -198,9 +203,9 @@ a:hover{
   }
 
 .sec_image_trackman {
-    height: 300px;
-    width: 350px;
-    margin: 70px 100px;
+    height: 350px;
+    width: 430px;
+    margin: 70px 30px;
 }
 
 .sec7 {
@@ -241,6 +246,7 @@ a:hover{
     opacity: .80; 
     font-weight: 400; 
     text-align: right;
+    white-space: nowrap;
 }
 
   @media only screen and (max-width: 500px){
