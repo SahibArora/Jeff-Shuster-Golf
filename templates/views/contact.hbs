@@ -23,7 +23,7 @@
         {{>header}}
         <div id='bg-img-header-contact'>
             <div class='TypeOldBlackLight' id='Service-text-contact'>
-                <span class='head-text Organetto-RegularExt' style=' font-size: 2.5rem;font-weight:700;'>Contact Us</span><br><br>
+                <span class='head-text Organetto-Regular' style=' font-size: 3.5rem;font-weight:700;'>Contact Us</span><br><br>
                 <span class='TypeOldBlackLight' style='font-weight: bold'>Please fill out the form or feel free to call <br> us with any questions.</span><br><br>
                 <span class='TypeOldBlackLight' style='font-weight: bold'><a href='https://maps.google.com/?q=Angus Glen Golf Club' target='_blank' style='color: white; text-decoration: none'>10080 Kennedy Rd. (at Angus Glen Golf Club) <br>Markham, ON L6C 1N9</a></span><br><br>
                 
@@ -37,10 +37,10 @@
         </div>
         <div class='TypeOldBlackLight' id='root-contact'>
             <div id='info-contact'>
-                <span class='Organetto-RegularExt' style='color:black; opacity: 0.70; font-size: 20px;letter-spacing:18px;font-weight:700;'>Book a fitting now</span><br><br><br>
+                <span class='Organetto-Regular' style='color:black; opacity: 0.70; font-size: 20px;letter-spacing:18px;font-weight:700;'>Book a fitting now</span><br><br><br>
                 <form onsubmit='return validateForm()' action='/contactinfo' method='POST'>
                     
-                    <div class="form-row Organetto-RegularExt">
+                    <div class="form-row Organetto-Regular">
                         <div class="col-md-6 col-sm-6">
                             <label class='col-md-7' style='font-weight: 500'>Your name *</label>
                             <input class='col-lg TypeOldBlackLight' type='text' name='name' id='name' style='font-size:15px; height:50px' required/>
@@ -52,13 +52,13 @@
                         </div>
                     </div><br><br>
 
-                    <div class="form-row Organetto-RegularExt">
+                    <div class="form-row Organetto-Regular">
                         <div class="col-md-6 col-sm-6">
-                            <label class='Organetto-RegularExt col-md-7' style='font-weight: 500'>Subject *</label><br>
+                            <label class='col-md-7' style='font-weight: 500'>Subject *</label><br>
                             <input class='col-lg TypeOldBlackLight' type='text' name='subject' id='subject' style='font-size:15px; height:50px' required/>
                         </div>
-                        <div class="col-md-6 col-sm-6 Organetto-RegularExt">
-                            <label for='serviceInterest' class='Organetto-RegularExt col-md-9' style='font-weight: 500'>Service Interest</label>
+                        <div class="col-md-6 col-sm-6">
+                            <label for='serviceInterest' class='col-md-9' style='font-weight: 500'>Service Interest</label>
                             <select class='col-lg TypeOldBlackLight' name='serviceInterest' id='serviceInterest' style='font-size:15px; height:50px;' onchange='showTimeSlots()'>
                                 <option value="">- - -</option>
                                 <option value="Driver Fitting">Driver Fitting --- [around 1 hr]</option>
@@ -74,14 +74,14 @@
                             </select>
                         </div>
                     </div><br><br>
-                    <div id='time_slots' class="form-row Organetto-RegularExt">
+                    <div id='time_slots' class="form-row Organetto-Regular">
                         <div class="col-md-6 col-sm-6">
                             <label class='uppercase col-md-9' style='font-weight: 500'>Choose your Date *</label>
                             <input class='col-lg TypeOldBlackLight' type='date' name='date' id='date' onchange='datePicked()' style='font-size:15px; height:50px'/>
                             <p id='errorDate' style='color: red; display:none'>Date not Available, please try again.</p>
                         </div>
                         <div class="col-md-6 col-sm-6">
-                            <label class='uppercase col-md-9 Organetto-RegularExt' style='font-weight: 500'>Select your Time *</label>
+                            <label class='uppercase col-md-9' style='font-weight: 500'>Select your Time *</label>
                             <select class='col-lg TypeOldBlackLight' name='timeSlot' id='timeSlot' style='font-size:15px; height:50px;'>
                                 <option value="">- - -</option>
                                 <option value="0900" id='0900'>09:00 am</option>
@@ -115,7 +115,7 @@
                             <label class='TypeOldBlackLight' style='font-weight: 400; margin-top:10px;'><mark>*Please choose the start time, and service type will book required slots for you automatically, unless its not other.</mark></label>
                         </div>
                     </div><br><br>
-                    <div class="form-row Organetto-RegularExt">
+                    <div class="form-row Organetto-Regular">
                         <div class="col-md-12 col-sm-6">
                             <label class='uppercase col-md-2' style='font-weight: 500'>Message <span id='messageRequired'>*</span></label><br>
                             <textarea class='col-lg TypeOldBlackLight' class='col-xs-10' type='text' name='message' id='message' style='font-size:15px; height:150px; padding:15px' required></textarea>
