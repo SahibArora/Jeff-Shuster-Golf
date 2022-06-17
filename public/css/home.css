@@ -144,7 +144,6 @@ a:hover{
 
   #sec2{
     display: flex; 
-    padding: 0px;
     background-color: rgb(230,230,230);
   }
 
@@ -205,11 +204,12 @@ a:hover{
 .sec_image_trackman {
     height: 350px;
     width: 430px;
-    margin: 70px 30px;
+    margin: 70px 30px 0px 30px;
 }
 
 .sec7 {
-    display: flex; background-color: rgb(230,230,230);
+    display: flex; 
+    background-color: rgb(230,230,230);
 }
 
 .sec7 > div {
